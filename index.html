@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenue sur Taskme — application web de gestion et d'affectation de tâches pour améliorer la collaboration en entreprise.">
+  <title>Taskme – Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="js/themeMode.js"></script>
+</head>
+
+<body>
+  <div id="notification-container"></div>
+  <header>
+    <button id="open-sidebar" class="sidebar-toggle">contenu ☰</button>
+    
+    <h1>Taskme</h1>
+    <p>Gérez et attribuez vos tâches facilement en équipe.</p>
+<button id="theme-toggle" class="theme-btn">🌙 Mode Sombre</button>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="tasks.html">Tâches</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<aside id="sidebar" class="sidebar" >
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="profile.html">Profil</a></li>
+<li><a href="tasks.html">Tâches</a></li>
+</ul>
+</aside>
+  <main class="main-content">
+    <section>
+      <h2>Présentation de Taskme</h2>
+      <p>Taskme est une application web intuitive pour la gestion des tâches collaboratives. Elle permet aux employés de suivre, déléguer ou refuser des tâches en toute simplicité.</p>
+      <ul>
+        <li>Accepter une tâche</li>
+        <li>Refuser une tâche</li>
+        <li>Déléguer une tâche</li>
+      </ul>
+    </section>
+
+    <section>
+      <article>
+        <h3>Fonctionnalités principales</h3>
+        <ol>
+          <li>Chat interne</li>
+          <li>parc véhicules</li>
+          <li>Tableau de bord </li>
+        </ol>
+
+        <figure>
+          <img src="images/taskeme.png" alt="Illustration de Taskme">
+          <figcaption>Exemple d'interface Taskme</figcaption>
+        </figure>
+      </article>
+
+      <div class="back-to-top">
+        <p><a href="#top">Revenir en haut !</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tous droits réservés © 2025 - Taskme</p>
+    <a href="" target="_blank">Mentions légales</a>
+  </footer>
+</body>
+  <script src="js/notification.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/task.js"></script>
+</body>
+</html>

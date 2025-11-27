@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil utilisateur Taskme">
+  <title>Taskme – Profil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="js/themeMode.js"></script>
+</head>
+<body>
+  <div id="notification-container"></div>
+  <header>
+    <button id="open-sidebar" class="sidebar-toggle">☰</button>
+    <h1>Taskme</h1>
+    <p>Gestion de profil utilisateur</p>
+    <button id="theme-toggle" class="theme-btn">🌙 Mode Sombre</button>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="profile.html" aria-current="page">Profil</a></li>
+        <li><a href="tasks.html">Tâches</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="profile.html" aria-current="page">Profil</a></li>
+      <li><a href="tasks.html">Tâches</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Profil utilisateur</h2>
+      <figure>
+        <img src="images/photo_profile.jpg" alt="Photo de profil" width="150">
+        <figcaption>FCB BERCALONA</figcaption>
+      </figure>
+
+      <div>
+        <p><strong>Nom :</strong> IDRISS OUCHAGHOUI</p>
+        <p><strong>Rôle :</strong> <span data-user-role="administrateur">Administrateur</span></p>
+        <p><strong>Email :</strong> <a href="mailto:idriss.ouchaghoui@gmail.com">idriss.ouchaghoui@gmail.com</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+212650606680">+212 650606680</a></p>
+        <p><strong>Statut :</strong> <span data-user-status="actif">Actif</span></p>
+      </div>
+
+      <details>
+        <summary>Compétences</summary>
+        <ul>
+          <li>Gestion d’équipe</li>
+          <li>Planification de projets</li>
+          <li>Suivi de performance</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tous droits réservés © 2025 - Taskme</p>
+    <p><a href="" target="_blank">Mentions légales</a></p>
+  </footer>
+</body>
+  <script src="js/notification.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/task.js"></script>
+</body>
+</html>

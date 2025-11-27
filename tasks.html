@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gestion des tâches – Taskme">
+  <title>Taskme – Tâches</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script src="js/themeMode.js"></script>
+</head>
+
+<body>
+  <div id="notification-container"></div>
+  <header>
+    <button id="open-sidebar" class="sidebar-toggle">☰</button>
+    <h1>Taskme</h1>
+    <p>Créez et gérez vos tâches en toute simplicité.</p>
+    <button id="theme-toggle" class="theme-btn">🌙 Mode Sombre</button>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="tasks.html" aria-current="page">Tâches</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="profile.html">Profil</a></li>
+      <li><a href="tasks.html" aria-current="page">Tâches</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <aside>
+      <h2>Créer une tâche</h2>
+      <form novalidate>
+        <label for="taskName">Nom :</label>
+        <input type="text" id="taskName" name="taskName" required placeholder="Nom de la tâche" aria-required="true"><br>
+
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" required placeholder="Détails de la tâche" aria-required="true"></textarea><br>
+
+        <label for="dueDate">Date :</label>
+        <input type="date" id="dueDate" name="dueDate" required aria-required="true"><br>
+
+        <label for="remuneration">Rémunération :</label>
+        <input type="number" id="remuneration" name="remuneration"><br>
+
+        <label for="vehicle">Besoin en véhicule :</label>
+        <input type="checkbox" id="vehicle" name="vehicle"><br>
+
+        <label for="mode">Mode d’affectation :</label>
+        <select id="mode" name="mode">
+          <option value="manuel">Manuel</option>
+          <option value="semi">Semi-automatisé</option>
+          <option value="auto">Automatisé</option>
+        </select><br>
+
+        <label for="status">Statut :</label>
+        <select id="status" name="status">
+          <option value="ouverte">Ouverte</option>
+          <option value="en-cours">En cours</option>
+          <option value="terminée">Terminée</option>
+        </select><br>
+
+        <button type="submit">Ajouter la tâche</button>
+      </form>
+    </aside>
+    <section>
+      <h2>Liste des tâches</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Préparer la réunion</td>
+            <td>Organiser la réunion hebdomadaire du lundi.</td>
+            <td>2025-10-22</td>
+            <td>Ouverte</td>
+            <td>
+              <button>Éditer</button>
+              <button>Supprimer</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tous droits réservés © 2025 - Taskme</p>
+    <p><a href="" target="_blank">Mentions légales</a></p>
+  </footer>
+</body>
+  <script src="js/notification.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/task.js"></script>
+</body>
+</html>
